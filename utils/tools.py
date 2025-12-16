@@ -99,6 +99,90 @@ def visual(true, preds=None, name='./pic/test.pdf'):
         plt.plot(preds, label='Prediction', linewidth=2)
     plt.legend(loc="upper right")
     plt.savefig(name,bbox_inches='tight')
+    plt.close()
+
+
+def visual_predictions(true, preds, input_data, pred_len, name='./pic/prediction.png'):
+    """
+    Enhanced visualization for predictions showing input, ground truth, and predictions
+    """
+    plt.figure(figsize=(15, 5))
+    
+    # Total length for x-axis
+    input_len = len(input_data)
+    total_len = input_len + pred_len
+    
+    # Create x-axis
+    x_input = np.arange(input_len)
+    x_pred = np.arange(input_len, total_len)
+    
+    # Plot input sequence
+    plt.plot(x_input, input_data, label='Input Sequence', color='blue', linewidth=2)
+    
+    # Plot ground truth
+    plt.plot(x_pred, true, label='Ground Truth', color='green', linewidth=2)
+    
+    # Plot predictions
+    plt.plot(x_pred, preds, label='Prediction', color='red', linewidth=2, linestyle='--')
+    
+    # Add vertical line to separate input and prediction
+    plt.axvline(x=input_len, color='black', linestyle=':', linewidth=1.5, label='Forecast Start')
+    
+    plt.xlabel('Time Steps')
+    plt.ylabel('Value')
+    plt.title('Time Series Forecasting: Input → Prediction vs Ground Truth')
+    plt.legend(loc='best')
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(name, dpi=150, bbox_inches='tight')
+    plt.close()
+
+
+def visual_multivariate(true, preds, input_data, pred_len, feature_names=None, 
+                        num_features=5, name='./pic/multivariate_prediction.png'):
+    """
+    Visualization for multiple features in multivariate time series
+    """
+    num_features = min(num_features, true.shape[1])
+    
+    fig, axes = plt.subplots(num_features, 1, figsize=(15, 3*num_features))
+    if num_features == 1:
+        axes = [axes]
+    
+    input_len = input_data.shape[0]
+    total_len = input_len + pred_len
+    
+    x_input = np.arange(input_len)
+    x_pred = np.arange(input_len, total_len)
+    
+    for i in range(num_features):
+        ax = axes[i]
+        
+        # Plot input
+        ax.plot(x_input, input_data[:, i], label='Input', color='blue', linewidth=1.5)
+        
+        # Plot ground truth
+        ax.plot(x_pred, true[:, i], label='Ground Truth', color='green', linewidth=1.5)
+        
+        # Plot predictions
+        ax.plot(x_pred, preds[:, i], label='Prediction', color='red', linewidth=1.5, linestyle='--')
+        
+        # Add vertical line
+        ax.axvline(x=input_len, color='black', linestyle=':', linewidth=1)
+        
+        feature_label = f'Feature {i+1}' if feature_names is None else feature_names[i]
+        ax.set_ylabel(feature_label)
+        ax.legend(loc='best', fontsize=8)
+        ax.grid(True, alpha=0.3)
+        
+        if i == 0:
+            ax.set_title('Multivariate Time Series Forecasting')
+        if i == num_features - 1:
+            ax.set_xlabel('Time Steps')
+    
+    plt.tight_layout()
+    plt.savefig(name, dpi=150, bbox_inches='tight')
+    plt.close()
 
 def test_params_flop(model,x_shape):
     """

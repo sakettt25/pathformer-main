@@ -1,0 +1,21 @@
+Rank,Company Name,NSE Ticker,Sector,Market Cap (USD Billions),Latest Price (INR),Price Change (%),Data Points,Min Price (INR),Max Price (INR),Headquarters,Key Product/Service,YTD Stock Performance
+1,Reliance Industries Ltd.,RELIANCE.NS,Conglomerate,245.0,1542.30,+23.26%,495,1157.28,1589.14,"Mumbai, India","Energy, Retail, Telecom",15.2%
+2,Tata Consultancy Services (TCS),TCS.NS,Information Technology,178.5,3205.10,-12.42%,495,2877.67,4389.97,"Mumbai, India","IT Services, Consulting",9.8%
+3,HDFC Bank Ltd.,HDFCBANK.NS,Financial Services,155.2,994.30,+23.39%,495,673.60,1012.90,"Mumbai, India","Banking, Financial Products",11.5%
+4,ICICI Bank Ltd.,ICICIBANK.NS,Financial Services,95.8,1366.00,+35.92%,495,963.95,1477.20,"Mumbai, India","Banking, Insurance, Asset Management",18%
+5,Hindustan Unilever Ltd. (HUL),HINDUNILVR.NS,Fast-Moving Consumer Goods (FMCG),85.1,2281.10,-6.40%,495,2108.96,2939.45,"Mumbai, India","Personal Care, Foods, Beverages",5.5%
+6,Infosys Ltd.,INFY.NS,Information Technology,80.3,1592.90,+8.15%,495,1328.67,1942.22,"Bengaluru, India","IT Services, Digital Transformation",7.9%
+7,Life Insurance Corporation (LIC),,Financial Services,75.0,0.0,0.0,0,0.0,0.0,"Mumbai, India",Life Insurance,22.1%
+8,State Bank of India (SBI),SBIN.NS,Financial Services,70.4,961.15,+53.72%,495,583.41,983.90,"Mumbai, India",Public Sector Banking,25.6%
+9,Bharti Airtel Ltd.,BHARTIARTL.NS,Telecommunications,65.9,2102.00,+115.24%,495,958.16,2162.70,"New Delhi, India",Mobile & Broadband Services,14.3%
+10,Bajaj Finance Ltd.,BAJAJFINSV.NS,Financial Services,58.7,2035.20,+18.14%,495,1475.65,2176.60,"Pune, India","Consumer Finance, Lending",10.1%
+11,Larsen & Toubro (L&T),LT.NS,Capital Goods,55.0,4063.80,+18.40%,495,3025.93,4092.30,"Mumbai, India","Engineering, Construction, Projects",28.5%
+12,Kotak Mahindra Bank,KOTAKBANK.NS,Financial Services,52.1,2182.40,+18.43%,495,1543.23,2266.19,"Mumbai, India","Banking, Investment Banking",4.9%
+13,Adani Enterprises Ltd.,,Diversified,50.5,0.0,0.0,0,0.0,0.0,"Ahmedabad, India","Infrastructure, Energy, Mining",33%
+14,Asian Paints Ltd.,ASIANPAINT.NS,Materials,48.9,2790.90,-14.37%,495,2109.32,3341.37,"Mumbai, India","Paints, Coatings, Home Decor",8.8%
+15,HCL Technologies Ltd.,HCLTECH.NS,Information Technology,45.5,1651.70,+18.06%,495,1238.13,1922.01,"Noida, India","IT Services, Engineering R&D",6.2%
+16,ITC Ltd.,ITC.NS,"FMCG, Conglomerate",42.0,401.70,-4.98%,495,383.10,505.32,"Kolkata, India","Tobacco, Hotels, Paperboards",19.5%
+17,Power Grid Corporation,POWERGRID.NS,Utilities,38.8,260.35,+20.64%,495,211.43,348.71,"Gurgaon, India",Electricity Transmission,12.7%
+18,Wipro Ltd.,WIPRO.NS,Information Technology,35.1,259.22,+21.35%,495,207.24,312.90,"Bengaluru, India","IT Consulting, Managed Services",3.5%
+19,Axis Bank Ltd.,AXISBANK.NS,Financial Services,33.4,1219.60,+9.92%,495,947.29,1316.18,"Mumbai, India","Banking, Treasury Operations",16%
+20,Sun Pharmaceutical Industries,SUNPHARMA.NS,Healthcare,30.2,1781.30,+44.79%,495,1209.99,1930.67,"Mumbai, India","Pharmaceuticals, Generic Drugs",17.5%

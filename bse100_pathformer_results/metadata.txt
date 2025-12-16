@@ -1,0 +1,20 @@
+PathFormer BSE100 Prediction Results
+=====================================
+
+Companies analyzed:
+  1. Reliance Industries Ltd. (RELIANCE.NS)
+  2. Tata Consultancy Services (TCS) (TCS.NS)
+  3. HDFC Bank Ltd. (HDFCBANK.NS)
+  4. ICICI Bank Ltd. (ICICIBANK.NS)
+  5. Hindustan Unilever Ltd. (HUL) (HINDUNILVR.NS)
+  6. Infosys Ltd. (INFY.NS)
+  7. State Bank of India (SBI) (SBIN.NS)
+  8. Bharti Airtel Ltd. (BHARTIARTL.NS)
+  9. Bajaj Finance Ltd. (BAJAJFINSV.NS)
+  10. Larsen & Toubro (L&T) (LT.NS)
+
+Model Parameters:
+  Input sequence length: 60 days
+  Prediction horizon: 30 days
+  Data points in period: 2 years
+  Samples generated: 41

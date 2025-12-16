@@ -1,7 +1,7 @@
 from data_provider.data_factory import data_provider
 from exp.exp_basic import Exp_Basic
 from models import PathFormer
-from utils.tools import EarlyStopping, adjust_learning_rate, visual, test_params_flop
+from utils.tools import EarlyStopping, adjust_learning_rate, visual, visual_predictions, visual_multivariate, test_params_flop
 from utils.metrics import metric
 
 import numpy as np
@@ -261,6 +261,39 @@ class Exp_Main(Exp_Basic):
         preds = preds.reshape(-1, preds.shape[-2], preds.shape[-1])
         trues = trues.reshape(-1, trues.shape[-2], trues.shape[-1])
         inputx = inputx.reshape(-1, inputx.shape[-2], inputx.shape[-1])
+
+        # Save predictions for later analysis
+        np.save(folder_path + 'predictions.npy', preds)
+        np.save(folder_path + 'ground_truth.npy', trues)
+        np.save(folder_path + 'inputs.npy', inputx)
+        print(f'Saved predictions to {folder_path}')
+
+        # Create enhanced visualizations
+        print('Creating visualizations...')
+        
+        # Visualize first 5 samples with single feature
+        for i in range(min(5, len(preds))):
+            visual_predictions(
+                true=trues[i, :, -1],
+                preds=preds[i, :, -1],
+                input_data=inputx[i, :, -1],
+                pred_len=self.args.pred_len,
+                name=os.path.join(folder_path, f'prediction_sample_{i}.png')
+            )
+        
+        # Visualize multivariate predictions for first sample
+        if self.args.features == 'M' and preds.shape[2] > 1:
+            for i in range(min(3, len(preds))):
+                visual_multivariate(
+                    true=trues[i],
+                    preds=preds[i],
+                    input_data=inputx[i],
+                    pred_len=self.args.pred_len,
+                    num_features=min(5, preds.shape[2]),
+                    name=os.path.join(folder_path, f'multivariate_sample_{i}.png')
+                )
+        
+        print(f'Visualizations saved to {folder_path}')
 
         mae, mse, rmse, mape, mspe, rse, corr = metric(preds, trues)
         print('mse:{}, mae:{}, rse:{}'.format(mse, mae, rse))
