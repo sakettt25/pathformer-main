@@ -1,0 +1,5 @@
+config_name,target_mode,normalization,revin_affine,revin_subtract_last,overall_mae,overall_mse,overall_rmse,walk_mae_mean,walk_mae_std,walk_rmse_mean,walk_rmse_std
+baseline_price,price,simple_global,False,False,77.66313171386719,14968.4541015625,122.34563376582959,77.66313171386719,0.0,122.34563446044922,0.0
+baseline_logreturn,log_return,simple_global,False,False,92.95064544677734,17182.14453125,131.08067947355934,92.95064544677734,0.0,131.08067321777344,0.0
+revin_price_tuned,price,revin,True,True,97.50927734375,21456.8671875,146.4816274742331,97.50927734375,0.0,146.48162841796875,0.0
+revin_logreturn_tuned,log_return,revin,True,True,133.3672332763672,39941.44921875,199.8535694421043,133.3672332763672,0.0,199.85357666015625,0.0

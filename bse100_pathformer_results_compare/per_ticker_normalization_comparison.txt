@@ -1,0 +1,23 @@
+Per-Ticker Normalization Differentiation (best RevIN vs best Baseline)
+====================================================================
+Common sample count used for fair ticker comparison: 1
+
+       ticker                         company  revin_mae  baseline_mae  delta_mae_revin_minus_baseline  revin_rmse  baseline_rmse  delta_rmse_revin_minus_baseline
+BHARTIARTL.NS              Bharti Airtel Ltd.  84.986328     95.095284                      -10.108955   99.780136     116.221085                       -16.440948
+      INFY.NS                    Infosys Ltd.  94.310066     98.077858                       -3.767792  118.479836     113.503448                         4.976387
+  RELIANCE.NS        Reliance Industries Ltd.  81.702408     84.359276                       -2.656868   96.148682      95.514145                         0.634537
+ POWERGRID.NS          Power Grid Corporation  16.160349     15.162014                        0.998335   18.964184      17.236053                         1.728130
+ KOTAKBANK.NS             Kotak Mahindra Bank   9.968876      8.574123                        1.394753   12.947052      10.977194                         1.969858
+   HCLTECH.NS           HCL Technologies Ltd.  89.210670     87.564430                        1.646240  105.796585     102.721458                         3.075127
+BAJAJFINSV.NS              Bajaj Finance Ltd.  51.532887     49.535961                        1.996925   65.661140      64.452065                         1.209076
+ SUNPHARMA.NS   Sun Pharmaceutical Industries  68.716545     66.614487                        2.102058   83.549126      80.102348                         3.446777
+     WIPRO.NS                      Wipro Ltd.  15.392846     12.603024                        2.789823   20.860214      16.490597                         4.369617
+       ITC.NS                        ITC Ltd.  38.814308     33.511284                        5.303024   53.111420      40.911964                        12.199455
+  HDFCBANK.NS                  HDFC Bank Ltd.  38.465706     31.318632                        7.147074   50.434326      35.434658                        14.999668
+ ICICIBANK.NS                 ICICI Bank Ltd.  42.231796     22.565063                       19.666733   48.963352      28.646198                        20.317154
+  AXISBANK.NS                  Axis Bank Ltd. 111.712990     66.918465                       44.794525  131.814896      84.027878                        47.787018
+        LT.NS           Larsen & Toubro (L&T) 274.070984    227.616333                       46.454651  308.936737     266.117981                        42.818756
+ASIANPAINT.NS               Asian Paints Ltd. 294.949066    247.573013                       47.376053  333.138092     286.771362                        46.366730
+HINDUNILVR.NS   Hindustan Unilever Ltd. (HUL) 106.697411     53.854259                       52.843151  128.911819      67.473793                        61.438026
+       TCS.NS Tata Consultancy Services (TCS) 180.163391    118.221710                       61.941681  218.962402     178.127548                        40.834854
+      SBIN.NS       State Bank of India (SBI) 156.080399     78.771179                       77.309219  182.799362     109.351379                        73.447983

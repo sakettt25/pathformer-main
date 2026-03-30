@@ -26,7 +26,13 @@ class Model(nn.Module):
         self.residual_connection = configs.residual_connection
         self.revin = configs.revin
         if self.revin:
-            self.revin_layer = RevIN(num_features=configs.num_nodes, affine=False, subtract_last=False)
+            revin_affine = getattr(configs, 'revin_affine', False)
+            revin_subtract_last = getattr(configs, 'revin_subtract_last', False)
+            self.revin_layer = RevIN(
+                num_features=configs.num_nodes,
+                affine=revin_affine,
+                subtract_last=revin_subtract_last,
+            )
 
         self.start_fc = nn.Linear(in_features=1, out_features=self.d_model)
         self.AMS_lists = nn.ModuleList()

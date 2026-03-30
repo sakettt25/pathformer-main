@@ -1,0 +1,5 @@
+config_name,target_mode,normalization,fold,sample_count,mae,mse,rmse
+baseline_price,price,simple_global,0,1,77.66313171386719,14968.4541015625,122.34563376582959
+revin_price_tuned,price,revin,0,1,97.50927734375,21456.8671875,146.4816274742331
+baseline_logreturn,log_return,simple_global,0,1,92.95064544677734,17182.14453125,131.08067947355934
+revin_logreturn_tuned,log_return,revin,0,1,133.3672332763672,39941.44921875,199.8535694421043

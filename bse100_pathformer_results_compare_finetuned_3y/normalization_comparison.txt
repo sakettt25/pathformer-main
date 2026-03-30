@@ -1,0 +1,17 @@
+Normalization Differentiation Report
+===================================
+
+Best RevIN config: revin_price_tuned
+Best Baseline config: baseline_logreturn
+Overall winner: baseline_logreturn
+
+Metrics on raw-price scale:
+  Best RevIN MAE: 94.037636
+  Best RevIN MSE: 20630.957031
+  Best RevIN RMSE: 143.634804
+  Best Baseline MAE: 87.991653
+  Best Baseline MSE: 17828.535156
+  Best Baseline RMSE: 133.523538
+  Delta MAE (RevIN - Baseline): 6.045982
+  Delta MSE (RevIN - Baseline): 2802.421875
+  Delta RMSE (RevIN - Baseline): 10.111267

@@ -1,0 +1,13 @@
+Automatic Best-Config Selection Report
+=====================================
+
+Selected winner: baseline_logreturn
+Winner target mode: log_return
+Winner normalization: simple_global
+Winner overall MAE: 87.991653
+Winner walk-forward MAE mean+/-std: 88.674469 +/- 6.890671
+
+Best RevIN config: revin_price_tuned (MAE=94.037636)
+Best Baseline config: baseline_logreturn (MAE=87.991653)
+Delta MAE (best RevIN - best Baseline): 6.045982
+Delta RMSE (best RevIN - best Baseline): 10.111267

@@ -1,0 +1,18 @@
+RELIANCE.NS	Reliance Industries Ltd.
+TCS.NS	Tata Consultancy Services (TCS)
+HDFCBANK.NS	HDFC Bank Ltd.
+ICICIBANK.NS	ICICI Bank Ltd.
+HINDUNILVR.NS	Hindustan Unilever Ltd. (HUL)
+INFY.NS	Infosys Ltd.
+SBIN.NS	State Bank of India (SBI)
+BHARTIARTL.NS	Bharti Airtel Ltd.
+BAJAJFINSV.NS	Bajaj Finance Ltd.
+LT.NS	Larsen & Toubro (L&T)
+KOTAKBANK.NS	Kotak Mahindra Bank
+ASIANPAINT.NS	Asian Paints Ltd.
+HCLTECH.NS	HCL Technologies Ltd.
+ITC.NS	ITC Ltd.
+POWERGRID.NS	Power Grid Corporation
+WIPRO.NS	Wipro Ltd.
+AXISBANK.NS	Axis Bank Ltd.
+SUNPHARMA.NS	Sun Pharmaceutical Industries

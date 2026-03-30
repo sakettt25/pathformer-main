@@ -1,0 +1,8 @@
+Config Comparison (sorted by overall MAE, lower is better)
+========================================================
+
+          config_name target_mode normalization  revin_affine  revin_subtract_last  overall_mae  overall_mse  overall_rmse  walk_mae_mean  walk_mae_std  walk_rmse_mean  walk_rmse_std
+       baseline_price       price simple_global         False                False    77.663132 14968.454102    122.345634      77.663132           0.0      122.345634            0.0
+   baseline_logreturn  log_return simple_global         False                False    92.950645 17182.144531    131.080679      92.950645           0.0      131.080673            0.0
+    revin_price_tuned       price         revin          True                 True    97.509277 21456.867188    146.481627      97.509277           0.0      146.481628            0.0
+revin_logreturn_tuned  log_return         revin          True                 True   133.367233 39941.449219    199.853569     133.367233           0.0      199.853577            0.0
